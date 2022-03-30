@@ -24,7 +24,6 @@ function submitBtnHandler(event) {
 
   // Adding Whole Task with buttons to our toDoList Element
   todoList.append(toDo);
-  console.log(typeof todoList);
 
   // Adding whole Task to Local Storage
   addToLocalStorage(userInput.value);
@@ -63,7 +62,6 @@ function completeDeleteHandler(ev) {
   if (classItem.className == "delete-btn") {
     const wholeTask = classItem.parentElement;
     wholeTask.remove();
-    delFromLocal(userInput.value);
   }
 
   if (classItem.className == "complete-btn") {
